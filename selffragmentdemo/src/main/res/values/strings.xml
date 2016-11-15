@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">selffragmentdemo</string>
+    <string name="login">登陆</string>
+    <string name="app_title">银谷在线</string>
+    <string name="register">注册</string>
+    <string name="get_vericode">获取验证码</string>
+    <string name="zhuceliucheng">注册流程</string>
+</resources>

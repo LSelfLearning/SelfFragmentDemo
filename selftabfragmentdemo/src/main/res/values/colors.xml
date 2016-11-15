@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--RadioGroup Background Color-->
+    <color name="rg_background_color">#ffffff</color>
+    <!--RadioButton Background Color-->
+    <color name="rb_checked_color">#4285f4</color>
+    <color name="rb_unchecked_color">#999999</color>
+
+</resources>

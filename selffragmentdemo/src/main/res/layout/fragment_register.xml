@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/head" />
+
+    <View style="@style/Devider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x30"
+        android:gravity="center_vertical"
+        android:text="银谷在线不会在任何地方泄露您的手机号"
+        android:textColor="@color/gray_99" />
+
+    <View style="@style/Devider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_nameIcon"
+                style="@style/CellIcon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/yonghuming" />
+
+            <ImageView
+                android:id="@+id/img_accountDelete"
+                style="@style/CellIcon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/delete" />
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="用户名(6-20位字母/数字组合,字母开头)"
+                android:inputType="text"
+                android:maxLength="20"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_nameIcon"
+                android:layout_toEndOf="@+id/img_nameIcon" />
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Devider"
+            android:layout_marginLeft="@dimen/x30" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88">
+
+            <ImageView
+                android:id="@+id/img_phoneNum"
+                style="@style/CellIcon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/phone" />
+
+            <ImageView
+                android:id="@+id/img_mobileDelete"
+                style="@style/CellIcon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/delete" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/img_mobileDelete"
+                android:layout_toRightOf="@id/img_phoneNum"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="phone"
+                android:maxLength="11" />
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Devider"
+            android:layout_marginLeft="@dimen/x30" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/FullRoundButton"
+        android:layout_marginTop="@dimen/y70"
+        android:text="下一步" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y30"
+        android:text="已有账号？请直接登录"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

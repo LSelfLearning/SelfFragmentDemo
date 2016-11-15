@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TabFragmentDemo</string>
+    <!--Radio Button Name -->
+    <string name="main_radio1">tab1</string>
+    <string name="main_radio2">tab2</string>
+    <string name="main_radio3">tab3</string>
+</resources>

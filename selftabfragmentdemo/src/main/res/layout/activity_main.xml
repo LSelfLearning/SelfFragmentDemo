@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tab_group"
+        />
+
+    <RadioGroup
+        android:background="@color/rg_background_color"
+        android:id="@+id/main_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/y8"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/MainTabButton"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_icon_home_bg"
+            android:drawablePadding="@dimen/y10"
+            android:text="@string/main_radio1" />
+
+        <RadioButton
+            android:id="@+id/tab_invest"
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/rb_icon_invest_bg"
+            android:drawablePadding="@dimen/y10"
+            android:text="@string/main_radio2" />
+
+        <RadioButton
+            android:id="@+id/tab_personal"
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/rb_icon_personal_bg"
+            android:drawablePadding="@dimen/y10"
+            android:text="@string/main_radio3" />
+    </RadioGroup>
+</RelativeLayout>
